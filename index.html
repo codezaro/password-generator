@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Password Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"
+    />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <section class="upper">
+          <div class="heading">
+            <span class="material-symbols-outlined"> lock </span>
+            <h1>Password Generator</h1>
+          </div>
+          <div id="password"></div>
+          <div class="range_container">
+            <label for=""
+              >Password Length <span id="passRangeValue">7</span>
+            </label>
+            <input
+              type="range"
+              min="1"
+              max="20"
+              value="7"
+              id="passRangeInput"
+            />
+          </div>
+          <div class="checkboxes">
+            <div class="form_control">
+              <label for="uppercase">Include uppercase</label>
+              <input id="uppercase" type="checkbox" name="uppercase" />
+            </div>
+            <div class="form_control">
+              <label for="numbers">Include numbers</label>
+              <input id="numbers" type="checkbox" name="numbers" />
+            </div>
+            <div class="form_control">
+              <label for="symbols">Include symbols</label>
+              <input id="symbols" type="checkbox" name="symbols" />
+            </div>
+          </div>
+        </section>
+        <button id="genBtn">Generate Button</button>
+      </div>
+    </div>
+  </body>
+</html>
